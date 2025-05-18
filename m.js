@@ -53,7 +53,7 @@ async function start() {
     process.exit(0);
   }
 
-  const sessionPath = `./sdcard/session/${phoneNumber}`;
+  const sessionPath = `./sdcard/session`;
   if (!fs.existsSync(sessionPath)) fs.mkdirSync(sessionPath, { recursive: true });
 
   // Get Baileys version
